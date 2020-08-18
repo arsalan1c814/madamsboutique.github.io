@@ -1,0 +1,262 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Product Compare</title>
+	<link rel="icon" href="../../images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/w3.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/Compare.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+		#navbarstyle{
+			border-style: solid 1px;
+			border-bottom-color: 0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+			background-color: black;
+		}
+		.navbar-toggler-icon{
+			border:4px solid;
+			border-bottom-color: #f90;
+		}
+
+		.logotext{
+			text-shadow: 0 0 3px #f90, 0 0 5px #f90;
+		}
+	.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color:orange;
+    border-radius: 30px;
+    padding: 10px;
+	margin-right:10px;
+	position:relative;
+	box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height:40px;
+    transition: width 0.4s linear;
+	
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 px;
+    width: 120px;
+    caret-color:red;
+    transition: width 0.4s linear;
+	
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+	box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+	
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+        #btnstyle{
+    	padding:5px  5px;
+    	font-size: 18px;
+    }
+    	#btnstyle:hover{
+    		border-bottom-color: green;
+    	}
+
+    #btnstyle li{
+    	padding: 5px 5px;
+    }
+     #btnstyle li a{
+     	color:#f90;
+     	size:20px;
+     	font-weight: bold;
+     }
+
+
+     .dropdown-item:hover{
+		background-color: black;
+     }
+
+     .comparigionbox{
+     	position: absolute;
+     	top:150px;
+     	width:100%;
+     	height: auto;
+     }
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="navbarstyle">
+		<nav class="navbar navbar-expand-lg  fixed-top " id="navbarstyle">
+		<a href="#" class="navbar-brand">
+			<table>
+				<tr>
+			<td><img src="logo.png" width="150px" height="60px"></td>
+			<td><h3 class="text-success logoheading">MADAM'S BOUTIQUES </h3></td>
+				</tr>
+			</table>
+		</a>
+		<button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#box" >
+			<span class="navbar-toggler-icon float-right"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="box">
+			<div class="container h-100">
+      				<div class="d-flex justify-content-center h-100">
+       					 <div class="searchbar">
+        			  <input class="search_input" type="text" name="" placeholder="Search...">
+          				<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+      
+                            
+    
+		<ul class="navbar-nav ml-auto text-center" id="btnstyle" >
+			
+					<i class="fas fa-home fa-2x text-white"></i><li class="nav-item">
+                <a href="../../index.html" class="nav-link active">Home</a></li>
+            <i class="fas fa-cart-plus fa-2x text-white"></i><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Product</a>
+                <div class="dropdown-menu">
+                    <a href="../../product1.html" class="dropdown-item">All Product</a>
+                    <a href="file:///G:/Project/My%20Project/New%20E-Project/bridal.html" class="dropdown-item">Bridal Collection</a>
+                    <a href="../../lawn.html" class="dropdown-item">Lawn Collection</a>
+                    <a href="../../casual.html" class="dropdown-item">Casual Dresses</a>
+                    <a href="../../saree.html" class="dropdown-item">Saree Collection</a>
+                    <a href="../../parywear.html" class="dropdown-item">Party Wear</a>
+                </div>
+                
+            </li>
+            <i class="fas fa-address-book fa-2x text-white"></i><li class="nav-item">
+                <a href="../../contact us.html" class="nav-link">Contact </a></li>
+            <i class="fa fa-bookmark fa-2x text-white"></i><li class="nav-item"><a href="../../about.html" class="nav-link">About </a></li>
+
+            <i class="far fa-image fa-2x text-white"></i><li class="nav-item">
+                <a href="../../Gallery.html" class="nav-link">
+                Gallery </a></li>
+						
+		</ul>
+
+	</div>
+
+	</nav>
+	</div>	
+	</div>
+
+
+	<div class="comparigionbox">
+
+    <div class="w3-center">
+        <h1 style="color: green; font-weight: bold;">Designer Dresses Comparision <i style="color:#f90;">(Product)</i></h1>
+    </div>
+    <br><br>
+    <div class="w3-container">
+        <div class="w3-row-padding">
+            
+            <div class="w3-col l3 m6  relPos w3-center ">
+                <div class="selectProduct w3-padding" data-title="Kashee’s-Design" data-id="Kashee’s-Design" data-size="Small,Large,Etc" data-weight="3500 to 50000" data-processor="Kashee Net Bridal Embroidery Maxi with embroidery net Dupatta now available " data-battery="Offer 30% in 2020">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="Kashee’s.jpg" width="200px" height="300px"class="imgFill productImg">
+                   
+                    <h4><br>Kashee's Designer</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 relPos w3-center">
+                <div class="selectProduct w3-padding" data-title="Shehryar-Design" data-id="Shehryar-Design" data-size="Small,Excel,Large,Etc" data-weight="8000 to 40000" data-processor="Hassan Model Provided to famous sharara with new design and dubatta" data-battery="Offer 10% in 2020">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="hassan.jpg" width="200px" height="300px"class="imgFill productImg">
+                    <h4><br>Hassan Sheryar Designer</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 relPos  w3-center ">
+                <div class="selectProduct w3-padding" data-title="Maria-Design" data-id="Maria-Design" data-size="Medium, Excel, large" data-weight="4000 to 35000" data-processor="Maria has a diffrent brand summer colection, plazo, lehnga with new design" data-battery="Offer 15% in 2020">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="maria.jpg" width="200px" height="300px"class="imgFill productImg">
+                    <h4><br>Maria Famous Designer</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 relPos  w3-center">
+                <div class="selectProduct w3-padding" data-title="Shamail-Designer" data-id="Shamail-Designer" data-size="Medium , large;" data-weight="5000 to 25000" data-processor="Shamail-Designer has alot of new brand with diffrent category " data-battery="Offer 20% in 2020">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="shamaeel.jpg" width="200px" height="300px"class="imgFill productImg">
+                    <h4><br>Shamaeel Designer</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--preview panel-->
+    <div class="w3-container  w3-center">
+        <div class="w3-row w3-card-4 w3-black w3-round-large w3-border comparePanle w3-margin-top">
+            <div class="w3-row">
+                <div class="w3-col l9 m8 s6 w3-margin-top">
+                    <h4>ADDED FOR DRESSES COMPARISION</h4>
+                </div>
+                <div class="w3-col l3 m4 s6 w3-margin-top">
+                    &nbsp;
+                    <button class="w3-btn w3-round-small w3-green w3-border notActive cmprBtn" disabled>Compare</button>
+                </div>
+            </div>
+            <div class=" titleMargin w3-container comparePan">
+            </div>
+        </div>
+    </div>
+    <!--end of preview panel-->
+    
+    <!-- comparision popup-->
+    <div id="id01" class="w3-animate-zoom w3-white w3-modal modPos">
+        <div class="w3-container">
+            <a onclick="document.getElementById('id01').style.display='none'" class="whiteFont w3-padding w3-closebtn closeBtn">&times;</a>
+        </div>
+        <div class="w3-row contentPop w3-margin-top">
+        </div>
+
+    </div>
+    <!--end of comparision popup-->
+
+    <!--  warning model  -->
+    <div id="WarningModal" class="w3-modal">
+        <div class="w3-modal-content warningModal">
+            <header class="w3-container w3-black ">
+                <h3 style="color:#f90;"><span>&#x26a0;</span>Error</h3>
+            </header>
+            <div class="w3-container">
+                <h4>Maximum of Three products are allowed for comparision</h4>
+
+            </div>
+            <footer class="w3-container w3-right-align">
+                <button style="background-color: green;"id="warningModalClose" onclick="document.getElementById('id01').style.display='none'" class="w3-btn w3-hexagonBlue w3-margin-bottom  ">Ok</button>
+            </footer>
+        </div>
+    </div>
+    <!--  end of warning model  -->
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+</html>

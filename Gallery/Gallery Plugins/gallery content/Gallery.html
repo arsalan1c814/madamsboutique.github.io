@@ -1,0 +1,406 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gallery</title>
+
+	<script src="javascript.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link href='../dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<link href='style galery.css' rel='stylesheet' type='text/css'>
+	
+
+	<style>
+			#navbarstyle{
+			border-bottom: 5px solid;
+	 		border-color: green;
+			background-color: black;
+		}
+		.navbar-toggler-icon{
+			border:4px solid;
+			border-bottom-color: #f90;
+		}
+
+		.logotext{
+			font-family: 'Monoton', cursive;
+		}
+
+		
+	.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color:orange;
+    border-radius: 30px;
+    padding: 10px;
+	margin-right:10px;
+	position:relative;
+	box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height:40px;
+    transition: width 0.4s linear;
+	
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 px;
+    width: 120px;
+    caret-color:red;
+    transition: width 0.4s linear;
+	
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+	box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+	
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+    #btnstyle{
+    	padding:5px  5px;
+    	font-size: 18px;
+    }
+
+    #btnstyle li{
+    	padding: 5px 5px;
+    }
+     #btnstyle li a{
+     	color:#f90;
+     	size:20px;
+     	font-weight: bold;
+     }
+
+
+	 #btnstyle li a:hover{
+	 	border-bottom: 3px solid;
+	 	border-color: green;
+
+	 }
+     .dropdown-item:hover{
+		background-color: black;
+		border-bottom: 3px solid;
+	 	border-color: green;
+	 	transition:1s ease;
+     }
+
+     .logoheading{
+		font-family: 'Monoton', cursive;
+		font-weight: bold;
+		font-size:25px;
+		padding:10px 10px;
+	}
+
+	.GaleryHeading
+	{
+		font-family: 'Monoton', cursive;
+		font-weight: bold;
+		font-size:35px;
+		padding:10px 10px;
+
+	}
+
+	.smallhr{
+		background-color: green;
+		width:100px;
+		height:5px;
+		border:none;
+	}
+
+
+	.linkstatus{
+   		background-color: black;
+   		color:white;
+   		border-top: 3px solid;
+	 	border-color: green;
+
+   }
+   h4{
+   	color:#f90;
+   }
+
+	a{
+		text-decoration:none;
+
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="navbarstyle">
+		<nav class="navbar navbar-expand-lg  fixed-top " id="navbarstyle">
+		<a href="#" class="navbar-brand">
+			<table>
+				<tr>
+			<td><img src="logo.png" width="150px" height="60px"></td>
+			<td><h3 class="text-success logoheading">MADAM'S BOUTIQUES </h3></td>
+				</tr>
+			</table>
+		</a>
+		<button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#box" >
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="box">
+			<div class="container h-100">
+      				<div class="d-flex justify-content-center h-100">
+       					 <div class="searchbar">
+        			  <input class="search_input" type="text" name="" placeholder="Search...">
+          				<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+      
+                            
+    
+		<ul class="navbar-nav ml-auto text-center" id="btnstyle" >
+			<i class="fas fa-home fa-2x text-white"></i><li class="nav-item">
+				<a href="../../../index.html" class="nav-link active">Home</a></li>
+			<i class="fas fa-cart-plus fa-2x text-white"></i><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Product</a>
+				<div class="dropdown-menu">
+					<a href="../../../product1.html" class="dropdown-item">All Product</a>
+                    <a href="../../../bridal.html" class="dropdown-item">Bridal Collection</a>
+                    <a href="../../../lawn.html" class="dropdown-item">Lawn Collection</a>
+                    <a href="../../../casual.html" class="dropdown-item">Casual Dresses</a>
+                    <a href="../../../saree.html" class="dropdown-item">Saree Collection</a>
+                    <a href="../../../parywear.html" class="dropdown-item">Party Wear</a>
+				</div>
+				
+			</li>
+			<i class="fas fa-address-book fa-2x text-white"></i><li class="nav-item">
+				<a href="../../../contact us.html" class="nav-link">Contact </a></li>
+			<i class="fa fa-bookmark fa-2x text-white"></i><li class="nav-item"><a href="../../../about.html" class="nav-link">About </a></li>
+
+			<i class="far fa-image fa-2x text-white"></i><li class="nav-item">
+				<a href="Gallery.html" class="nav-link">
+				Gallery </a></li>
+						
+		</ul>
+
+	</div>
+
+	</nav>
+	</div>	
+	</div>
+	
+<br><br><br><br>
+	<div class="container-fluid text-center mt-5 text-danger">
+		<h1 class="GaleryHeading">Gallery Of Products</h1>
+		<hr class="smallhr">
+	</div>
+
+
+	<!--gallery -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/c.jpg" class="big"><img src="images/thumbs/c.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+
+			<div class="col-md-2 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/41.jpeg" class="big"><img src="images/thumbs/41.jpeg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+
+			<div class="col-md-2 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/3.jpg" class="big"><img src="images/thumbs/3.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+			<div class="col-md-2 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/42.jpg" class="big"><img src="images/thumbs/42.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+		</div>
+
+
+
+		<div class="row mt-3">
+			<div class="col-md-2 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/6.jpg" class="big"><img src="images/thumbs/6.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+
+			<div class="col-md-2 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/43.jpg" class="big"><img src="images/thumbs/43.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+			<div class="col-md-2 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/2.jpg" class="big"><img src="images/thumbs/2.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+
+			<div class="col-md-6 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/banner.jpg" class="big"><img src="images/thumbs/banner.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+		</div>
+
+
+
+		
+		<div class="row mt-3">
+			<div class="col-md-3 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/9.jpg" class="big"><img src="images/thumbs/9.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+
+			<div class="col-md-6 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/5.jpg" class="big"><img src="images/thumbs/5.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+
+
+			<div class="col-md-3 col-sm-3 mt-3">
+			<div class="gallery">
+				<a href="images/8.jpg" class="big"><img src="images/thumbs/8.jpg" width="100%" height="300px" alt="" title="Beautiful Image" /></a>
+			</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	<div class="container-fluid text-center mt-5 linkstatus">
+        <div class="row mt-5">
+            <div class="col-md-3 col-sm-6 ">
+            <br/><br/>
+                <h4>COMPANY</h4>
+                <hr class="smallhr">
+               <p class="link1"><a href="about.html" class="text-white ">About Us</a></p>
+                 <p class="link1"><a href="contact us.html" class="text-white ">Contact Us</a></p>
+                  
+                   
+            </div>
+            
+            <div class="col-md-3 col-sm-6 my-5">
+                <h4>Social Contact US</h4>
+                <hr class="smallhr">
+               <p class="link1"><a href="#" class="text-white ">Address</a></p>
+                 <p class="link1"><a href="#" class="text-white ">Email: Madams12@gmail.com</a></p>
+                  <p class="link1"><a href="#" class="text-white" > Phone: 03152309828</a></p>
+               
+                   
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-6 my-5">
+                <h4>MOST POPULAR</h4>
+                <hr class="smallhr">
+               <p class="link1"><a href="product1.html" class="text-white ">All Product</a></p>
+                 <p class="link1"><a href="casual.html" class="text-white ">Casual Dress</a></p>
+                  <p class="link1"><a href="parywear.html" class="text-white "> Partywear Dresses</a></p>
+                   <p class="link1"><a href="saree.html" class="text-white ">Saree Collection</a></p>
+                   <p class="link1"><a href="lawn.html" class="text-white ">Lawn Collection</a></p>
+                   
+                   
+            </div>
+            
+            <div class="col-md-3 col-sm-6 my-5">
+                <h4>PAYMENT OPTIONS</h4>
+                <hr class="smallhr">
+                <img src="Payment.jpg" width="100%" height="auto">
+            </div>
+        </div>
+     
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../dist/simple-lightbox.js"></script>
+<script>
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+</body>
+</html>

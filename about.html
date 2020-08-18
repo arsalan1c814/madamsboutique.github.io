@@ -1,0 +1,550 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>About Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style>
+		#navbarstyle{
+			border-style: solid 1px;
+			border-bottom-color: 0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+			background-color: black;
+		}
+		.navbar-toggler-icon{
+			border:4px solid;
+			border-bottom-color: #f90;
+		}
+
+		.logotext{
+			text-shadow: 0 0 3px #f90, 0 0 5px #f90;
+		}
+		.logoheading{
+		font-family: 'Monoton', cursive;
+		font-weight: bold;
+		font-size:25px;
+		padding:10px 10px;
+	}
+	.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color:orange;
+    border-radius: 30px;
+    padding: 10px;
+	margin-right:10px;
+	position:relative;
+	box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height:40px;
+    transition: width 0.4s linear;
+	
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 px;
+    width: 120px;
+    caret-color:red;
+    transition: width 0.4s linear;
+	
+    }
+
+   #topBtn{
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		font-size: 30px;
+		background-color:#f90;
+		width:50px;
+		height: 50px;
+		color:white;
+		border:none;
+		cursor: pointer;
+		display: none;
+	}
+
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+	box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+	
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+        #btnstyle{
+    	padding:5px  5px;
+    	font-size: 18px;
+    }
+    	#btnstyle:hover{
+    		border-bottom-color: green;
+    	}
+
+    #btnstyle li{
+    	padding: 5px 5px;
+    }
+     #btnstyle li a{
+     	color:#f90;
+     	size:20px;
+     	font-weight: bold;
+     }
+
+
+       .dropdown-item:hover{
+		background-color: black;
+		border-bottom: 3px solid;
+	 	border-color: green;
+	 	transition:1s ease;
+     }
+
+	.banner{
+		width: 100%;
+		height: 500px;
+		background-image: url("About Page Content/banner.jpg");
+		background-position: center;
+		background-size: cover;
+		border-bottom-color: 3px solid green;
+		border-bottom-right-radius: 50px;
+		bottom:50px;
+
+	}
+
+	.banner button a{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		color:white;
+		background-color: black;
+		padding:10px 20px;
+		border:none;
+		box-shadow:0 0 10px #603, 0 0 10px #603 ,0 0 10px #603, 0 0 80px #603 ;
+		width:150px;
+		height:60px;
+		border-radius: 50px;
+		font-size:25px;
+		text-decoration: none;
+
+	}
+
+	.banner button a:hover{
+		width:300px;
+		transition: 1s ease;
+		color:green;
+		font-size:30px;
+		text-decoration: none;
+		padding:5px 20px;
+	}
+	
+	.modal-dialog{
+		position: absolute;
+		top:20%;
+		left: 30%;
+		transform: translate(-50%,-50%);
+	}
+	.modal-header{
+		background-color: black;
+	}
+	
+	.modal-footer{
+		background-color: black;
+	}
+
+	.aboutmadam img{
+		border-radius: 20px;
+		border-style: solid;
+		border-top-color: green;
+		border-left-color: #f90;
+		border-right-color: #f90;
+		border-top-color: green;
+		border-color: #f90;
+	}
+
+	.abc{
+		border-radius: 100%;
+		width:130px;
+		height:150px;
+		position: relative;
+		top:-75px;
+		left:75px;
+
+	}
+
+	.abch4{
+		position: relative;
+		top:-60px;
+		color:#f90;
+	}
+	.abch5{
+		position: relative;
+		top:-65px;
+		color:white;
+	}
+
+	.abcabout{
+		position: relative;
+		top:-80px;
+		color:red;
+		text-align:center;
+		font-size: 30px;
+	}
+
+	.abcp{
+		position: relative;
+		top:-80px;
+		color:black;
+		text-align:center;
+		font-size: 18px;
+
+	}
+
+	.btncard{
+		background-color: #f90;
+		color:white;
+		font-size:20px;
+		padding:5px 20px;
+		position: relative;
+		top:-80px;
+		align-content: center;
+		border: none;
+		width:180px;
+		height:50px;
+
+	}
+
+	.btncard:hover{
+		background-color:black;
+		width:180px;
+		height:50px;
+	}
+
+	.card{
+		background-color: black;
+		height:450px;
+		border-top-right-radius: 150px;
+		box-shadow:0 0 5px #603, 0 0 5px #603 ,0 0 5px #603, 0 0 20px #603 ;
+		poistion:relative;
+		left:30px;
+		top:50px;
+	}
+
+	.card:hover{
+		background-color:green;
+		transition: 2s ease;
+	}
+
+	 .linkstatus{
+   		background-color: black;
+   		color:white;
+   		top:150px;
+   		position: relative;
+
+   }
+
+    h4{
+   	color:#f90;
+   }
+
+
+	.smallhr{
+		background-color: green;
+		width:100px;
+		height:5px;
+		border:none;
+	}
+
+
+	.GaleryHeading
+	{
+		font-family: 'Monoton', cursive;
+		font-weight: bold;
+		font-size:35px;
+		padding:10px 10px;
+
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="navbarstyle">
+		<nav class="navbar navbar-expand-lg  fixed-top " id="navbarstyle">
+		<a href="#" class="navbar-brand">
+			<table>
+				<tr>
+			<td><img src="Contact Us Page/logo.png" width="150px" height="60px"></td>
+			<td><h3 class="text-success logoheading">MADAM'S BOUTIQUE </h3></td>
+				</tr>
+			</table>
+		</a>
+		<button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#box" >
+			<span class="navbar-toggler-icon float-right"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="box">
+			<div class="container h-100">
+      				<div class="d-flex justify-content-center h-100">
+       					 <div class="searchbar">
+        			  <input class="search_input" type="text" name="" placeholder="Search...">
+          				<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+      
+                            
+    
+		<ul class="navbar-nav ml-auto text-center" id="btnstyle" >
+			<i class="fas fa-home fa-2x text-white"></i><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<i class="fas fa-cart-plus fa-2x text-white"></i><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Product</a>
+				<div class="dropdown-menu">
+					<a href="product1.html" class="dropdown-item">All Product</a>
+                    <a href="bridal.html" class="dropdown-item">Bridal Collection</a>
+                    <a href="lawn.html" class="dropdown-item">Lawn Collection</a>
+                    <a href="casual.html" class="dropdown-item">Casual Dresses</a>
+                    <a href="saree.html" class="dropdown-item">Saree Collection</a>
+                    <a href="parywear.html" class="dropdown-item">Party Wear</a>
+				</div>
+				
+			</li>
+			<i class="fas fa-address-book fa-2x text-white"></i><li class="nav-item"><a href="contact us.html" class="nav-link">Contact </a></li>
+			<i class="fa fa-bookmark fa-2x text-white"></i><li class="nav-item"><a href="about.html" class="nav-link">About </a></li>
+						
+			<i class="far fa-image fa-2x text-white"></i><li class="nav-item"><a href="Gallery\Gallery Plugins\gallery content/Gallery.html" class="nav-link">Gallery </a></li>
+		</ul>
+
+	</div>
+
+	</nav>
+	</div>	
+	</div>
+
+	<!-
+	
+	<div class="container-fluid">
+		<div class="banner">
+			
+				<button class="text-center"data-toggle="modal" data-target="#modal1"><a href="#">About US</a></button>
+
+		</div>
+
+
+	</div>
+
+	<div class="container-fluid mt-5">
+		<h1 class="GaleryHeading text-center text-danger">About Us</h1>
+		<hr class="smallhr">
+		<div class="row mt-5">
+			<div class="col-md-6 col-sm-6 aboutmadam">
+				<img src="About Page Content/2.png"width="100%" height="480px alt="">
+			</div>
+
+			<div class="col-md-6 col-sm-6 mt-3">
+				<h1 class="GaleryHeading text-center text-danger">Madam's Boutique</h1>
+				<hr class="smallhr">
+				<h5 class="text-justify">Since 1993, Exclusive Inn is helping women feel proud of their dressing choices. We have helped thousands of women over a span of more than 20 years in redefining their suiting choices and bringing their festive dressings to the latest trends.
+				With an eye to detail and uncompromised watch to fabric quality, Exclusive Inn is working in Pakistan to offer a one-of-its kind Pakistani fashion boutique environment. Be it Pakistani boutique bridals dresses, party wear, designer wear or festive suiting, we have the best team that will provide you the best and most stylish dresses available in the market at the best prices!
+				Our aim is to help women be happy in carrying their dresses. Your happiness is our ultimate objective! We design dresses to help you stay comfortable, look fashionable, seem elegant and have an undeniable class with your clothing. At Exclusive Inn, your clothing choices are exclusive and not mass-produced, unlike other boutiques in the market.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<hr>
+		<h1 class="GaleryHeading text-center text-danger mt-3">Fashion Designer</h1>
+		<hr class="smallhr">
+		<div class="row mt-5 mx-auto ">
+			<div class="col-md-4 col-sm-6 mt-5  ">
+				<div class="card" style="width: 18rem;">
+  					<img src="About Page Content/3.jpg" class="card-img-bottom abc" >
+						<h4 class="text-center abch4">Hassan Shehryar Yasin</h4>
+						<h5 class="text-center abch5">(hassanhsy)<i class="fa fa-check text-danger" aria-hidden="true"></i><h5>
+  							<div class="card-body">
+    							<h5 class="card-title abcabout">About</h5>
+    								<p class="card-text text-justify text-center abcp text-white">Hassan Sheheryar Yasin, often referred to by his initials, HSY, is a Pakistani fashion designer and television host. ..<br><br>
+								<i class="fab fa-facebook fa-2x"></i>
+								<i class="fab fa-twitter fa-2x"></i>
+								<i class="fab fa-instagram fa-2x"></i>
+    								</p>
+    								<center>
+    							<button type="button" class="btncard" data-toggle="modal" data-target="#exampleModal" data-whatever="@Madam">Send Message</button></center>
+  </div>
+</div>
+				
+</div>
+				<div class="col-md-4 col-sm-6 mt-5  ">
+				<div class="card" style="width: 18rem;">
+  					<img src="About Page Content/5.jpg" class="card-img-bottom abc" >
+						<h4 class="text-center abch4">Kashif Aslam</h4>
+						<h5 class="text-center abch5">(@kashee's)<i class="fa fa-check text-danger" aria-hidden="true"></i><h5>
+  							<div class="card-body">
+    							<h5 class="card-title abcabout">About</h5>
+    								<p class="card-text text-justify text-center abcp text-white">Mr. Kashif Aslam holds a Bachelors degree in Architecture from the University of Engineering and Technology Lahore.<br><br>
+								<i class="fab fa-facebook fa-2x"></i>
+								<i class="fab fa-twitter fa-2x"></i>
+								<i class="fab fa-instagram fa-2x"></i>
+    								</p>
+    								<center>
+    							<button type="button" class="btncard" data-toggle="modal" data-target="#exampleModal" data-whatever="@Madam">Send Message</button></center>
+			</div>
+
+			
+
+		</div>
+	</div>
+		
+			<div class="col-md-4 col-sm-6 mt-5 ">
+				<div class="card" style="width: 18rem;">
+  					<img src="About Page Content/6.jpg" class="card-img-bottom abc" >
+						<h4 class="text-center abch4">Shamaeel Ansari</h4>
+						<h5 class="text-center abch5">(@ansari)<i class="fa fa-check text-danger" aria-hidden="true"></i><h5>
+  							<div class="card-body">
+    							<h5 class="card-title abcabout">About</h5>
+    								<p class="card-text text-justify text-center abcp text-white">Shamaeel Ansari is one of the living legends of Pakistani fashion with twenty-four years of work in the industry under her belt.. ..<br><br>
+								<i class="fab fa-facebook fa-2x"></i>
+								<i class="fab fa-twitter fa-2x"></i>
+								<i class="fab fa-instagram fa-2x"></i>
+    								</p>
+    								<center>
+    							<button type="button" class="btncard" data-toggle="modal" data-target="#exampleModal" data-whatever="@Madam">Send Message</button></center>
+  </div>
+</div>
+</div>
+  	 <div class="container-fluid text-center mt-5 linkstatus">
+        <div class="row mt-5">
+            <div class="col-md-3 col-sm-6 ">
+            <br/><br/>
+                <h4>COMPANY</h4>
+                <hr class="smallhr">
+               <p class="link1"><a href="about.html" class="text-white ">About Us</a></p>
+                 <p class="link1"><a href="contact us.html" class="text-white ">Contact Us</a></p>
+                  
+                   
+            </div>
+            
+            <div class="col-md-3 col-sm-6 my-5">
+                <h4>Address</h4>
+                <hr class="smallhr">
+               <p class="link1"><a href="#" class="text-white ">Location: North-Nazimabad 15/A</a></p>
+                 <p class="link1"><a href="#" class="text-white ">Email:madam@gmail.com</a></p>
+                  <p class="link1"><a href="#" class="text-white ">Phone:03152309828</a></p>
+                   <p class="link1"><a href="#" class="text-white ">Connect With SocialMEDIA</a></p>
+                   
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-6 my-5">
+                <h4>MOST POPULAR</h4>
+                <hr class="smallhr">
+               <p class="link1"><a href="product1.html" class="text-white ">All Product</a></p>
+                 <p class="link1"><a href="casual.html" class="text-white ">Casual Dress</a></p>
+                  <p class="link1"><a href="parywear.html" class="text-white "> Partywear Dresses</a></p>
+                   <p class="link1"><a href="saree.html" class="text-white ">Saree Collection</a></p>
+                   <p class="link1"><a href="lawn.html" class="text-white ">Lawn Collection</a></p>
+                   
+                   
+            </div>
+            
+            <div class="col-md-3 col-sm-6 my-5">
+                <h4>PAYMENT OPTIONS</h4>
+                <hr class="smallhr">
+                <img src="Carosel Slider image/Payment-Option-Icons.jpg" width="100%" height="auto">
+            </div>
+        </div>
+     
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+
+
+	<!--Open Card Contact Modal-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-white" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name" data-whatever="@Madam">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- oPen Modals-->
+
+		<div class="modal" id="modal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-center" style="color:green;">MADAM'S COLECTION / DESIGNER</h5>
+						 <button type="button" class="close " data-dismiss="modal">&times;</button>
+					</div>
+
+					<div class="modal-body">
+						<table>
+							<tr>
+								<td><img src="About Page Content/1.jpg"></td>
+								<td><h5>MADAM'S COLLECTION</h5>
+									<h6 class="text-justify">Since 1993, Exclusive Inn is helping women feel proud of their dressing choices. We have helped thousands of women over a span of more than 20 years in redefining their suiting choices and bringing their festive dressings to the latest trends.</h6>
+									<h6 style="color:red;">Booking Offer: 20% off</h6>
+									
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+
+					<div class="modal-footer">
+							<h5 class="align-content-center" style="color:#f90;">BEST FASHION DESIGNER</h5>
+						
+							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script> <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+       <script src="javascript.js" type="text/javascript"></script>
+
+</html>
